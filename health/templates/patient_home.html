@@ -1,0 +1,46 @@
+{% extends 'index.html' %}
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Django Background Image</title>
+    <style>
+        body {
+                image: url("{% static 'dashboard.jpg' %}");
+            
+        }
+
+        h1 {
+            color: white;
+            text-align: center;
+            padding-top: 20%;
+            font-family: Arial, sans-serif;
+        }
+    </style>
+</head>
+<body>
+{% block body %}
+
+<div class="container-fluid" style="margin-top:100px;margin-bottom:2%;width:100%">
+    <h2 align="center" style="font-weight:bold;font-family:roman">PATIENT DASHBORAD</h2><hr/>
+    <br>
+    <center>
+    
+        <h1>Welcome to Your Dashboard!</h1>
+
+    <div style="height: 0; padding-bottom: calc(52.02%); position:relative; width: 80%; height: 250px;">
+        <img src="">
+        <!--iframe
+            allow="autoplay; gyroscope;" allowfullscreen height="100%" referrerpolicy="strict-origin"
+            src="https://www.kapwing.com/e/61bce88b1427a3003e13e657"
+            style="border:0; height:100%; left:0; overflow:hidden; position:absolute; top:0; width:100%; border: 5px solid grey;"
+            title="Embedded content made on Kapwing" width="100%"></iframe--></div>
+    </center>
+</div>
+
+
+{% endblock %}
+</body>
